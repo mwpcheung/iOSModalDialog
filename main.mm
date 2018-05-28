@@ -48,5 +48,7 @@
 }
 
 ///
-[self doModalDialog:@"this is title"message: @"this is message" titles:@[@"button1", @"button2"];
+NSString* selectedText = [self doModalDialog:@"this is title"message: @"this is message" titles:@[@"button1", @"button2"];
+// after dialog run over
+DebugPrint(@"selected text is %@", selectedText);
 // 
